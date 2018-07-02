@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title> Number Guesser Game </title>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700" rel="stylesheet">
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <header>
+    <h1> <span>Number</span> Guesser </h1>
+  </header>
+
+  <!--- Main Content -->
+
+  <main>
+    <section class="game">
+      <form id="my-form">
+        <input type="number" placeholder="Enter your guess" id="number" size"15">
+        <p id="error"></p>
+        <div>
+          <input type="number" placeholder="Enter min range" id="min-range">
+          <input type="number" placeholder="Enter max range" id="max-range">
+        </div>
+        <button id="range-set" aria-label="Button for submitting range">Set Range </button>
+        <div>
+          <button type="submit" id="guess">Guess</button>
+          <button role="clear" id="clear">Clear</button>
+        </div>
+      </form>
+      <span class="display-game"></span>
+        <p class="colored-font" id="guess-help"> Take a guess </p>
+        <h2 id="display-guess">...</h2>
+        <p class="colored-font">Current range between: <span id="min">0</span> -- <span id="max">100</span></p>
+
+      <button id="reset" type="reset">Reset</button>
+    </section>
+
+  </main>
+  <script src="app.js">
+  </script>
+
+</body>
+</html>
+
+
+
+
+  <!--
+  An input field for guessing the number    (done)
+  A button for submitting a guess           (done)
+  A button for clearing the input field     (done)
+  A button that resets the game
+
+-->
