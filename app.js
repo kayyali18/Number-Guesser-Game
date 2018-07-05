@@ -68,7 +68,7 @@ function userFeedback (guess, number, min, max) {
   if (guess < min || guess > max){
      guessHelp.innerText = "Please guess within range";
      displayGuess.innerText = '...';
-   }
+  }
   else if (guess < number) guessHelp.innerText = 'That is too low';
   else if (guess > number) guessHelp.innerText = 'That is too high';
   else guessHelp.innerText = 'BOOM!!';
@@ -146,7 +146,7 @@ clearButton.disabled = true;
 guessButton.addEventListener ('click', function () {
   event.preventDefault ();
   var parsed = parseInt (userGuess.value);
-  parsed = get_nums (parsed); //send parse to get checked
+  parsed = get_nums(parsed); //send parse to get checked
   if (parsed !== false) displayGuess.innerText = parsed; //if false is returned dont do anything
 
   //Compare user answer and display message
